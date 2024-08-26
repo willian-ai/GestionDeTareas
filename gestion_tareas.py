@@ -25,13 +25,13 @@ def menu():
     print("2. Agregar tarea")
     print("3. Eliminar tarea")
     print("4. Salir")
-    opcion = input("Ingresa una opción: ")
+    
     
 if __name__ == "__main__":
     while True:
         menu()
         
-        option = input("Ingresa una opción: ")
+        option = input("Ingresa una opción 1, 2, 3 o 4 : ")
         if option == "1":
             mostrar_tareas()
         elif option == "2":
@@ -41,7 +41,7 @@ if __name__ == "__main__":
             indice = int(input("Ingresa el índice de la tarea a eliminar: "))
             eliminar_tarea(indice)
         elif option == "4":
-            print("Hasta luego")
+            print("Saliendo del programa...")
             break
         else:
-            print("Opción inválida. Por favor, elige una opción válida.")
+            print("Opción inválida. ")
